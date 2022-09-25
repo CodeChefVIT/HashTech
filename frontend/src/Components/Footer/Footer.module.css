@@ -1,0 +1,91 @@
+.container {
+    background: black;
+    display: flex;
+    align-items: flex-start;
+    padding: 6rem;
+    justify-content: space-around;
+    position: relative;
+}
+
+.social_img {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social_img img {
+    transition: all 400ms ease;
+}
+
+.social_img img:hover {
+    transform: rotate(10deg);
+}
+
+.social_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.social_container > h2 {
+    color: white;
+    font-family: "mudclaw";
+}
+
+.nav_container ul li {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.nav_container ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 400ms ease;
+}
+
+.nav_container ul li a:hover {
+    font-weight: 800;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 3%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        padding: 6rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .social_container {
+        align-items: center;
+    }
+    .nav_container ul li a {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .social_img img:hover {
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .social_img a img {
+        width: 32px;
+    }
+    .copyright {
+        width: 80%;
+    }
+}
