@@ -2,7 +2,7 @@ import styles from "./EventSection.module.css";
 import EventBg from "../../Images/EventBg.png";
 
 const EventSection = () => {
-    var countDownDate = new Date("Sept 25, 2022 15:37:25").getTime();
+    var countDownDate = new Date("Sept 30, 2022 14:00:00").getTime();
 
     // Update the count down every 1 second
 

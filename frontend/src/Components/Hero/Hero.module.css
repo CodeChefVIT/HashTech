@@ -3,25 +3,24 @@
     position: relative;
 }
 
-.main_container::before {
-    content: "";
+.main_container > img {
     position: absolute;
+    z-index: -1;
+    right: 0;
     bottom: 0;
-    top: 0;
-    background: #f8b91d no-repeat;
-    height: 100vh;
-    width: 100vw;
-    z-index: -2;
+    width: auto;
 }
 
 .navbar_container {
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 12vh;
     border-bottom: 1px solid #111;
     border-top: 1px solid #111;
     position: relative;
     background-color: white;
+    align-items: center;
+    padding: 0 2rem 0 0;
 }
 
 .navbar_container::before {
@@ -35,8 +34,10 @@
 
 .navbar_container > img {
     width: auto;
+    height: 100%;
     background-color: #9dd9e4;
-    padding: 0 0.5rem;
+    padding: 0.5rem 2rem;
+    border-right: 2px solid black;
 }
 
 .navbar_list_container > ul {
@@ -54,7 +55,7 @@
     display: flex;
     padding-left: 3em;
     padding-right: 3em;
-    border-left: 1px solid;
+    /* border-left: 1px solid; */
     height: 100%;
 }
 
@@ -62,11 +63,14 @@
     text-decoration: none;
     align-self: center;
     color: rgb(69, 69, 69);
-    transition: all 300ms ease;
+    transition: all 200ms ease-in-out;
+    position: relative;
 }
 
 .navbar_list_container > ul > li > a:hover {
+    /* position: absolute; */
     color: black;
+    border-bottom: 3px solid var(--hover-color);
 }
 
 .container {
@@ -83,7 +87,7 @@
     right: 0;
     bottom: 0;
     width: auto;
-    /* height: 95%; */
+    height: 95%;
 }
 
 .content_container {
@@ -99,7 +103,7 @@
     padding: 1em 2em;
     box-shadow: 4px 4px 0px #111;
     border-radius: 0;
-    background-color: #82d965;
+    background-color: var(--primary-color);
     font-weight: 800;
     outline: 2px solid black;
     border: 0;
@@ -109,7 +113,7 @@
 .content_container button:hover {
     background-color: black;
     color: white;
-    box-shadow: 4px 4px 0px #f8b91d;
+    box-shadow: 0px 0px 0px #f8b91d;
 }
 
 .title_heading_container {
@@ -142,7 +146,21 @@
 
 .Watch_now {
     text-align: center;
-    background-color: #9dd9e4;
+    background-color: var(--secondary-color);
+    padding: 1.5em 2em;
+    /* height1%; 0.5em*/
+    outline: 0;
+    border: 0;
+    color: black;
+    font-weight: 600;
+    outline: 1px solid black;
+    transition: all 300ms ease-in-out;
+}
+.Watch_now:hover {
+    text-align: center;
+    background-color: black;
+    color: white;
+    outline: 1sol0.5emid white;
 }
 
 @media only screen and (max-width: 950px) {
@@ -168,10 +186,43 @@
         padding-right: 1em;
     }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 810px) {
+    .title_heading_container > h1 {
+        font-size: 6em;
+    }
+    .title_heading_container > p {
+        text-align: center;
+        width: 98%;
+    }
+}
+@media only screen and (max-width: 740px) {
     .navbar_container > img {
         display: none;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .title_heading_container {
+        width: 100vw;
+    }
+    .title_heading_container > h1 {
+        font-size: 4em;
+    }
+    .title_heading_container > h3 {
+        font-size: 1em;
+    }
+    .title_heading_container > p {
+        font-size: 0.75em;
+        text-align: center;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contact {
+        display: none !important;
+    }
+
     .navbar_container {
         display: flex;
         justify-content: space-around;
@@ -183,24 +234,23 @@
 
     .navbar_list_container > ul > li {
         display: flex;
-
         border-left: 0px solid;
-        border-right: 1px solid;
+        /* border-right: 1px solid; */
     }
 
     .Watch_now {
         text-align: center;
-        background-color: white;
-        border-right: 0px black !important;
+
+        padding: 1em 1em;
     }
 }
 @media only screen and (max-width: 400px) {
     .title_heading_container > h1 {
-        font-size: 6em;
+        font-size: 2em;
     }
     .title_heading_container > p {
         text-align: center;
-        width: 99%;
+        width: 90%;
     }
 }
 

@@ -5,16 +5,15 @@ const About = () => {
     return (
         <div className={styles.container} id="about">
             <div className={styles.title_heading_container}>
-                <h1>What’s tech Talks?</h1>
+                <h1>What’s HashTech?</h1>
                 <p>
-                    Tech talks is an offline round table discussion that
-                    promises an insight into the lives and careers of leading
-                    figures in the industry. Talking about emerging
-                    technologies, this is not just any guest lecture, but an
-                    interactive session providing students with a broader
-                    perspective on each domain covered. With speakers from
-                    different domains, blending perfectly together, we hope to
-                    surpass the success achieved in Tech talks 2.0.
+                    HashTech is an event designed to get you started on your
+                    blockchain-developing journey. It gives you an edge compared
+                    to your peers and the opportunity to learn and work
+                    alongside the best in the industry right now. You also have
+                    a chance to get your blockchain-inspired ideas vetted by
+                    these experts. Become a connoisseur of blockchain and get
+                    started in your journey!
                 </p>
             </div>
             <img src={AboutImage} alt="About Image here" />

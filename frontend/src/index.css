@@ -16,6 +16,10 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --primary-color: #ffb444;
+    --hover-color: #f69071;
+    --secondary-color: #9dd9e4;
+    --event-color: #439ac8;
 }
 
 code {
