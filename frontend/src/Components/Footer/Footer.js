@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="contact">
             <img src={CodechefLogo} alt="" />
             <div className={styles.social_container}>
                 <h2>Socials</h2>
