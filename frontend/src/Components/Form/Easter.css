@@ -16,15 +16,18 @@
 
 .container_form form {
     float: right;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
-.container_form input[type="email"] {
+.container_form input {
     /* padding: 4px; */
-    height: 40px;
+    height: 30px;
     width: 250px;
-    margin: 10px 40px;
+    /* margin: 10px 40px; */
     padding: 10px;
-    font-size: 17px;
+    font-size: 12px;
     font-family: "Poppins", sans-serif;
 }
 
