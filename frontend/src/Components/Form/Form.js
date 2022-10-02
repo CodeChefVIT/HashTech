@@ -17,7 +17,7 @@ function Easter() {
             <form onSubmit={easter_egg}>
                 <input
                     type="text"
-                    placeholder="What're you trying to find here? Don't be an inspector"
+                    placeholder="What does a chef do all day"
                     value={egg}
                     onChange={(e) => setEgg(e.target.value)}
                 />
