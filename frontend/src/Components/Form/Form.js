@@ -5,7 +5,8 @@ import { useState } from "react";
 function Easter() {
     const [egg, setEgg] = useState("");
 
-    const easter_egg = () => {
+    const easter_egg = (e) => {
+        e.preventDefault();
         if (egg === "cook") {
             alert("Go to techtalks3.codechefvit.com");
         }
